@@ -2,17 +2,107 @@
 <html>
     <head>
         <title>Jasmine's First Website</title>
+        <style>
+            body {
+                background: #997dcd;
+                color: rgb(45, 45, 45);
+                padding: 10px;
+                font-family: arial;
+            }
+            #all-contents {
+                max-width: 800px;
+                margin: auto;
+            }
+        
+            /* navigation menu */
+            nav {
+                background: rgb(239, 41, 170);
+                margin: 0 auto;
+                margin-bottom: 20px;
+                display: flex;
+                padding: 10px;
+            }
+            nav h1 {
+                display: flex;
+                align-items: center;
+                color: white;
+                flex: 1;
+                margin: 0;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color: #fff;
+            }
+        
+            /* main container area beneath menu */
+            main {
+                background: rgb(245, 238, 219);
+                display: flex;
+            }
+            .sidebar {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            .sidebar img {
+                width: 200px;
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+            h2, h3 {
+                margin: 0px;
+            }
+        </style>
     </head>
     
     <body>
         <div id="all-contents"> 
+            <!-- Header section -->
+            <h2>Jasmine Marie</h2>
+            <p>Software Engineering Student</p>
+            
+            <!-- Interests section -->
+            <div id="interests">
+                <h3>Interests</h3>
+                <ul>
+                    <li>Legos</li>
+                    <li>Photography</li>
+                    <li>Movies</li>
+                </ul>
+            </div> 
+            
+            <!-- Navigation section -->
             <nav>
-    
+                <h1>Jasmine's Amazing First Website</h1>
+                <ul>
+                    <li>
+                      <a href="index.html"> Home </a>
+                    </li>
+                    <li>
+                      <a href="portfolio.html"> Portfolio </a>
+                  </li>
+                </ul>
             </nav>
     
+            <!-- Main content section -->
             <main>
-    
+                <div class="sidebar">
+                    <!-- Sidebar image -->
+                    <img src="https://pbs.twimg.com/media/GS84zfoWgAAfFL8?format=jpg&name=small" alt="Jasmine's Photo">
+                </div>
+            
+                <div class="content">
+                    <!-- Content area (add your main content here) -->
+                </div>
             </main>
         </div>
     </body>
-</html
+</html>
